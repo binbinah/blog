@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "http://tsing.fun/"
 # [en, zh-cn, fr, ...] 设置默认的语言
 defaultContentLanguage = "zh-cn"
 # 网站语言, 仅在这里 CN 大写
@@ -6,7 +6,7 @@ languageCode = "zh-CN"
 # 是否包括中日韩文字
 hasCJKLanguage = true
 # 网站标题
-title = "我的全新 Hugo 网站"
+title = "tsing.fun"
 
 # 更改使用 Hugo 构建网站时使用的默认主题
 theme = "LoveIt"
@@ -46,7 +46,7 @@ theme = "LoveIt"
   #  LoveIt theme version
   version = "0.2.X"
   # site description
-  description = "This is My New Hugo Site"
+  description = "A blog about programming、technical support、life, and other things."
   # site keywords
   keywords = ["Theme", "Hugo"]
   # site default theme ("light", "dark", "auto")
@@ -129,7 +129,7 @@ theme = "LoveIt"
     #  whether to show the author
     author = true
     # Site creation time
-    since = 2019
+    since = 2022
     # ICP info only in China (HTML format is supported)
     icp = ""
     # license info (HTML format is supported)
@@ -167,7 +167,7 @@ theme = "LoveIt"
       #  title shown in home page (HTML format is supported)
       title = ""
       # subtitle shown in home page
-      subtitle = "This is My New Hugo Site"
+      subtitle = "A blog about programming、technical support、life, and other things."
       # whether to use typeit animation for subtitle
       typeit = true
       # whether to show social links
@@ -185,70 +185,11 @@ theme = "LoveIt"
 
   # Social config about the author
   [params.social]
-    GitHub = "xxxx"
-    Linkedin = ""
-    Twitter = "xxxx"
-    Instagram = "xxxx"
-    Facebook = "xxxx"
-    Telegram = "xxxx"
-    Medium = ""
-    Gitlab = ""
-    Youtubelegacy = ""
-    Youtubecustom = ""
-    Youtubechannel = ""
-    Tumblr = ""
-    Quora = ""
-    Keybase = ""
-    Pinterest = ""
-    Reddit = ""
-    Codepen = ""
-    FreeCodeCamp = ""
-    Bitbucket = ""
-    Stackoverflow = ""
-    Weibo = ""
-    Odnoklassniki = ""
-    VK = ""
-    Flickr = ""
-    Xing = ""
-    Snapchat = ""
-    Soundcloud = ""
-    Spotify = ""
-    Bandcamp = ""
-    Paypal = ""
-    Fivehundredpx = ""
-    Mix = ""
-    Goodreads = ""
-    Lastfm = ""
-    Foursquare = ""
-    Hackernews = ""
-    Kickstarter = ""
-    Patreon = ""
-    Steam = ""
-    Twitch = ""
-    Strava = ""
-    Skype = ""
-    Whatsapp = ""
-    Zhihu = ""
-    Douban = ""
-    Angellist = ""
-    Slidershare = ""
-    Jsfiddle = ""
-    Deviantart = ""
-    Behance = ""
-    Dribbble = ""
-    Wordpress = ""
-    Vine = ""
-    Googlescholar = ""
-    Researchgate = ""
-    Mastodon = ""
-    Thingiverse = ""
-    Devto = ""
-    Gitea = ""
-    XMPP = ""
-    Matrix = ""
-    Bilibili = ""
-    Email = "xxxx@xxxx.com"
-    RSS = true # 
+    GitHub = "binbinah"
+    Twitter = "binbinah"
+    Instagram = "binbinah"
+    Email = "yellingbinbin@gmail.com"
+    RSS = true 
 
   #  Page config
   [params.page]
@@ -527,9 +468,9 @@ theme = "LoveIt"
 
 # Author config
 [author]
-  name = "xxxx"
-  email = ""
-  link = ""
+  name = "zhanghb"
+  email = "yellingbinbin@gmail.com"
+  link = "tsing.fun"
 
 # Sitemap config
 [sitemap]
