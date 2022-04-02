@@ -1,4 +1,4 @@
-# [译文] RangeQuery and WindowedRangeQuery
+# 02.[译文] RangeQuery and WindowedRangeQuery
 
 
 近期在使用 SQLAlchemy 读取大批量数据的时候，遇到了一个问题，因为数据量过大而查询进程被 Kill 的问题，就想到了使用生成器或者单个请求拆分多次查询的方法。在 github 上找到了一篇 Wiki，照着 Wiki 中的方式，成功解决了 SQLAlchemy 查大数据失败的问题。
@@ -19,7 +19,7 @@ The goal is to select through a very large number of rows that's too large to fe
 
 The simplest is to order the results by a particular unique column (usually primary key), then fetch chunks using LIMIT only, adding a WHERE clause that will ensure we only fetch rows greater than the last one we fetched). This will work for basically any database backend and is illustrated below for MySQL. The potential downside is that the database needs to sort the full set of remaining rows for each chunk, which may inefficient, even though both recipes presented here assume the sort column is indexed. However, the approach is very simple and can likely work for most ordinary use cases for a primary key column on a database that does not support window functions.
 
-```
+```python
 def windowed_query(q, column, windowsize):
     """"Break a Query into chunks on a given column."""
 
@@ -76,7 +76,7 @@ if __name__ == "__main__":
 
 A more elaborate way to do this, which allows that the table rows are fully sorted only once, is to use a window function in order to establish the exact range for each "chunk" ahead of time, and then to yield chunks as rows selected within that range. This works only on databases that support windows functions. This recipe has been on the SQLAlchemy Wiki for a long time but it's not clear how much advantage it has over the previous simpler approach; both approaches should be evaluated for efficiency for a given use case.
 
-```
+```python
 import sqlalchemy
 from sqlalchemy import and_, func
 
@@ -166,7 +166,7 @@ if __name__ == '__main__':
 
 Here's an example of the kind of SQL this emits:
 
-```
+```sql
 -- first, it gets a list of ranges, with 1000 values in each bucket
 SELECT anon_1.widget_data AS anon_1_widget_data 
 FROM (SELECT widget.data AS widget_data, row_number() OVER (ORDER BY widget.data) AS rownum 
@@ -222,7 +222,7 @@ Row (599, 100274)
 #### Non Window Function Version
 Don't have window functions on the target database? Here's an approach that uses LIMIT in conjunction with tracking the last fetched primary key:
 
-```
+```python
 def _yield_limit(qry, pk_attr, maxrq=100):
     """specialized windowed query generator (using LIMIT/OFFSET)
 
