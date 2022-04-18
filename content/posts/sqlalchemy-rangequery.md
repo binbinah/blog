@@ -1,6 +1,9 @@
 ---
 title: "02.[译文] RangeQuery and WindowedRangeQuery"
 date: 2022-04-02T20:43:53+08:00
+categories: ["python"]
+tags: ["python","sqlalchemy"]
+keywords: ["译文","ORM", "RangeQuery"]
 ---
 
 近期在使用 SQLAlchemy 读取大批量数据的时候，遇到了一个问题，因为数据量过大而查询进程被 Kill 的问题，就想到了使用生成器或者单个请求拆分多次查询的方法。在 github 上找到了一篇 Wiki，照着 Wiki 中的方式，成功解决了 SQLAlchemy 查大数据失败的问题。
