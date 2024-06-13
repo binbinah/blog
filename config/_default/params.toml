@@ -1,8 +1,8 @@
 
-title = "I'm Jane Doe"
-author = "Jane Doe"
+title = "I'm binbinah"
+author = "binbinah"
 #copyright = "2020-2021"
-description = "Call me Jane"
+description = "A place to write something about code, running, and something else"
 profilePicture = "images/profile.jpg"
 keywords = ""
 favicon = "favicons/"
@@ -59,22 +59,22 @@ use = "katex"  # options: "katex", "mathjax". default is "katex".
 [[socialIcons]]
 icon = "fab fa-linkedin"
 title = "Linkedin"
-url = "https://de.linkedin.com/"
+url = ""
 
 [[socialIcons]]
 icon = "fab fa-github"
 title = "GitHub"
-url = "https://github.com/lxndrblz/anatole/"
+url = "https://github.com/binbinah"
 
 [[socialIcons]]
-icon = "fab fa-instagram"
-title = "instagram"
-url = "https://www.instagram.com/"
+icon = "fab fa-twitter"
+title = "X"
+url = "https://x.com/binbinah"
 
 [[socialIcons]]
 icon = "fas fa-envelope"
 title = "e-mail"
-url = "mailto:mail@example.com"
+url = "mailto:yellingbinbin@gmail.com"
 
 [mermaid]
 # enable = true

@@ -1,23 +1,23 @@
   [[main]]
-  name = "الرئيسية"
+  name = "首页"
   identifier = "main"
   weight = 100
-  url = "/ar/"
+  url = "/zh/"
 
   [[main]]
-  name = "المنشورات"
+  name = "文章"
   weight = 200
   identifier = "posts"
-  url = "/ar/post/"
+  url = "/zh/post/"
 
   [[main]]
-  name = "حول"
+  name = "关于"
   weight = 300
   identifier = "about"
-  url = "/ar/about/"
+  url = "/zh/about/"
 
   [[main]]
-  name = "للتواصل"
+  name = "联系"
   weight = 400
   identifier = "contact"
-  url = "/ar/contact/"
+  url = "/zh/contact/"
